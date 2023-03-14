@@ -1,0 +1,100 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	font-size: 62.5%;
+	scroll-behavior: smooth;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+	font-size: 1.6rem;
+}
+
+.wrapper {
+	margin: 0 auto;
+	width: 100%;
+	max-width: 1200px;
+}
+
+//NAV
+
+.burger-btn {
+	position: fixed;
+	top: 30px;
+	right: 30px;
+	padding: 1em;
+	background: none;
+	border: 1px solid transparent;
+	cursor: pointer;
+	z-index: 1000;
+	&__icon {
+		font-size: 3rem;
+		color: rgb(9, 172, 9);
+	}
+}
+
+//HEADER
+
+.header {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	padding: 2em;
+	height: 100vh;
+	text-align: center;
+	color: #fff;
+	background-image: url(../img/jungle_small.jpg);
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	&__hero-bg {
+		position: absolute;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 0;
+		background-color: rgba($color: #000000, $alpha: 0.7);
+	}
+	&__heading {
+		padding: 1em;
+		font-size: 3rem;
+		font-weight: 300;
+		z-index: 10;
+	}
+	&__text {
+		font-size: 3.5rem;
+		z-index: 10;
+	}
+}
+
+//O NAS
+
+.section-about {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	padding: 3em 2em;
+	&__heading {
+		font-size: 2rem;
+		margin-bottom: 2em;
+	}
+	&__text {
+		text-align: center;
+		font-size: 1.5rem;
+	}
+	&__img {
+		height: 200px;
+		width: 100%;
+		margin-top: 2em;
+		background-image: url(../img/waters_small.jpg);
+		background-size: cover;
+		background-position: center;
+	}
+}
