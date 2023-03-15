@@ -80,10 +80,10 @@ body {
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
-	padding: 3em 2em;
+	padding: 3em 2em 6em;
 	&__heading {
-		font-size: 2rem;
-		margin-bottom: 2em;
+		font-size: 2.5rem;
+		margin-bottom: 1.5em;
 	}
 	&__text {
 		text-align: center;
@@ -97,4 +97,104 @@ body {
 		background-size: cover;
 		background-position: center;
 	}
+}
+
+// HERO IMG
+
+.section-hero-img {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	background-image: url(../img/girl_small.jpg);
+	background-size: cover;
+	background-position: center;
+	height: 400px;
+	&__hero-bg {
+		position: absolute;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 0;
+		background-color: rgba($color: #000000, $alpha: 0.4);
+	}
+	&__heading {
+		padding: 1em 2em;
+		border: solid 1px;
+		font-size: 2rem;
+		color: #fff;
+		z-index: 2;
+	}
+}
+
+//OFFERS
+
+.section-offers {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	padding: 4em 2em;
+	&__heading {
+		margin-bottom: 1em;
+		font-size: 3rem;
+		font-weight: 300;
+		text-transform: uppercase;
+	}
+	&__text {
+		margin-bottom: 3em;
+	}
+
+	&__card {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		margin-bottom: 4em;
+		padding: 1em 1em 3em;
+		width: 80%;
+		box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.3);
+		&-heading {
+			padding: 1em;
+			font-size: 3rem;
+		}
+
+		&-text {
+			padding-bottom: 1em;
+			font-size: 3rem;
+			font-weight: 700;
+		}
+		&-options {
+			list-style: none;
+		}
+		&-option {
+			padding: 0.2em;
+			.fa-check {
+				margin-right: 1em;
+				font-size: 1.5rem;
+				color: #07c653;
+			}
+			.fa-minus {
+				margin-right: 1em;
+				font-size: 1.5rem;
+			}
+		}
+		&-btn {
+			margin-top: 2em;
+			padding: 0.7em;
+			width: 60%;
+			background: none;
+			border: none;
+			box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+			border-radius: 7px;
+			cursor: pointer;
+		}
+	}
+}
+
+//FOOTER
+
+.section-footer {
+	height: 300px;
+	background-color: #ebebeb;
 }
